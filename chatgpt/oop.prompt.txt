@@ -1,0 +1,22 @@
+write an example c++ class following the given description:
+We are facing a electric car.
+Which is a car.
+Which is a vehicle.
+This vehicle has wheels, and can be driven.
+
+it should demonstrate (with comments) the following properties of object oriented  programming:
+Methods, Interfaces, Classes
+Abstraction, Inheritance, Polymorphism, Encapsulation
+Members, Methods, Instances, Statics
+
+---
+
+can you write a similar equivalent program for simula and smalltalk separately, if they cannot represent similar concepts to cpp, explain why in comments
+
+---
+
+can you provide the appropriate file extensions for each code blocked listed please
+
+---
+
+what versions/editions of each language do i need to run these examples

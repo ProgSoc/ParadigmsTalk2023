@@ -1,0 +1,48 @@
+BEGIN
+
+CLASS Vehicle;
+    BEGIN
+        PROCEDURE Drive;
+            OutText("Driving the vehicle");
+            OutImage;
+        END;
+    END;
+
+CLASS Car (SUPERCLASS Vehicle);
+    BEGIN
+        CHARACTER Make, Model;
+
+        BEGIN
+            Make :- "Generic";
+            Model :- "Car";
+        END;
+
+        PROCEDURE Drive;
+            OutText("Driving the ", Make, " ", Model, " car");
+            OutImage;
+        END;
+    END;
+
+CLASS ElectricCar (SUPERCLASS Car);
+    BEGIN
+        INTEGER BatteryCapacity;
+
+        BEGIN
+            BatteryCapacity :- 0;
+        END;
+
+        PROCEDURE Drive;
+            OutText("Driving the electric ", Make, " ", Model, " car with a ", BatteryCapacity, " kWh battery");
+            OutImage;
+        END;
+    END;
+
+Vehicle vehicle;
+Car car("Toyota", "Camry");
+ElectricCar electricCar("Tesla", "Model S", 100);
+
+vehicle.Drive;
+car.Drive;
+electricCar.Drive;
+
+END;
